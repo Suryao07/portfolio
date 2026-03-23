@@ -1,16 +1,69 @@
-# React + Vite
+# 🔐 surya0x Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern cybersecurity portfolio built using React and Vite, showcasing projects, tools, certifications, and research in penetration testing and post-quantum cryptography.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Live Website
+👉 https://surya0x.technoleg.in
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🧠 About
+This portfolio highlights my work in cybersecurity, including hands-on projects, CTF experience, and ongoing research in hybrid post-quantum cryptographic systems.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack
+
+- React (Frontend)
+- Vite (Build Tool)
+- JavaScript
+- Tailwind CSS
+- GitHub API (for project integration)
+
+---
+
+## 🔥 Features
+
+- 🔐 Cybersecurity-focused portfolio design  
+- 📂 Dynamic project viewer (GitHub integration)  
+- 🧠 Research section (Post-Quantum Cryptography)  
+- 📜 Resume download  
+- 🎯 Skills & tools categorized (pentesting workflow)  
+- ⚡ Fast and responsive UI  
+
+---
+
+## 📁 Projects Included
+
+- DomainScanner (Reconnaissance tool)
+- EmailScraper (OSINT automation)
+- Caesar Cipher (Cryptography fundamentals)
+
+---
+
+## 🔬 Research
+
+**Security Evaluation of Hybrid Post-Quantum Cryptographic Systems Under Real-World Attack Scenarios**
+
+Focused on combining classical encryption with quantum-resistant algorithms and evaluating performance, security, and real-world feasibility.
+
+---
+
+## ⚙️ Setup (Local Development)
+
+```bash
+git clone https://github.com/Suryao07/portfolio.git
+cd portfolio
+npm install
+npm run dev
+📦 Build for Production
+npm run build
+🚀 Deployment
+
+Deployed using Netlify with automatic CI/CD from GitHub.
+
+📬 Contact
+LinkedIn: https://www.linkedin.com/in/surya-pratap-singh-61a41130a
+GitHub: https://github.com/Suryao07
