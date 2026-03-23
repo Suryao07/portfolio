@@ -240,6 +240,8 @@ export default function Home() {
                 className="social-link-style"
                 style={socialLinkStyle}
                 aria-label={social.name}
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <span style={{ fontSize: "1.5rem" }}>{social.icon}</span>
                 <span style={{ fontSize: "0.85rem", marginLeft: "8px" }}>{social.name}</span>
@@ -378,13 +380,13 @@ export default function Home() {
               key={index} 
               style={certCard} 
               className="cert-card"
-              onClick={() => window.open("https://www.linkedin.com/in/surya-pratap-singh-61a41130a", "_blank")}
+              onClick={() => window.open("https://www.linkedin.com/in/surya-pratap-singh-61a41130a", "_blank", "noopener,noreferrer")}
               role="button"
               tabIndex={0}
               aria-label={`${cert.title} - Click to view LinkedIn profile`}
               onKeyDown={(e) => {
                 if (e.key === 'Enter' || e.key === ' ') {
-                  window.open("https://www.linkedin.com/in/surya-pratap-singh-61a41130a", "_blank");
+                  window.open("https://www.linkedin.com/in/surya-pratap-singh-61a41130a", "_blank", "noopener,noreferrer");
                 }
               }}
             >

@@ -887,7 +887,7 @@ export default function Projects() {
                   }}
                   onClick={(e) => {
                     e.stopPropagation();
-                    window.open(project.url, "_blank");
+                    window.open(project.url, "_blank", "noopener,noreferrer");
                   }}
                 >
                   GitHub →
@@ -895,6 +895,31 @@ export default function Projects() {
               </div>
             </div>
           </div>
+        ))}
+      </div>
+
+      {/* Mobile Scroll Indicator - Dots */}
+      <div className="mobile-scroll-indicator" style={{
+        display: "none",
+        justifyContent: "center",
+        alignItems: "center",
+        marginTop: "24px",
+        gap: "8px"
+      }}>
+        {projects.map((_, index) => (
+          <span
+            key={index}
+            className="scroll-indicator-dot"
+            style={{
+              width: "8px",
+              height: "8px",
+              borderRadius: "50%",
+              background: "#4fd1ff",
+              boxShadow: "0 0 12px rgba(79, 209, 255, 0.6)",
+              opacity: 0.6,
+              transition: "all 0.3s ease"
+            }}
+          ></span>
         ))}
       </div>
 
@@ -1022,7 +1047,7 @@ export default function Projects() {
               </div>
 
               <button
-                onClick={() => window.open(selectedProject.url, "_blank")}
+                onClick={() => window.open(selectedProject.url, "_blank", "noopener,noreferrer")}
                 style={{
                   background: "#4fd1ff",
                   border: "1px solid #4fd1ff",
@@ -1495,11 +1520,66 @@ export default function Projects() {
           display: none;
         }
 
+        /* Mobile Scroll Indicator */
+        .mobile-scroll-indicator {
+          text-align: center;
+          display: flex;
+          justify-content: center;
+          gap: 8px;
+        }
+
+        .scroll-indicator-dot {
+          animation: dotPulse 2s ease-in-out infinite;
+        }
+
+        .scroll-indicator-dot:nth-child(1) {
+          animation-delay: 0s;
+        }
+
+        .scroll-indicator-dot:nth-child(2) {
+          animation-delay: 0.2s;
+        }
+
+        .scroll-indicator-dot:nth-child(3) {
+          animation-delay: 0.4s;
+        }
+
+        @keyframes dotPulse {
+          0%, 100% {
+            opacity: 0.4;
+            transform: scale(1);
+            box-shadow: 0 0 8px rgba(79, 209, 255, 0.3);
+          }
+          50% {
+            opacity: 1;
+            transform: scale(1.2);
+            box-shadow: 0 0 16px rgba(79, 209, 255, 0.8);
+          }
+        }
+
+        @keyframes scrollPulse {
+          0%, 100% {
+            opacity: 0.4;
+            transform: scale(1);
+            box-shadow: 0 0 12px rgba(79, 209, 255, 0.3);
+          }
+          50% {
+            opacity: 1;
+            transform: scale(1.3);
+            box-shadow: 0 0 20px rgba(79, 209, 255, 0.8);
+          }
+        }
+
         /* Projects horizontal scroll responsive */
         @media (max-width: 768px) {
           .projects-horizontal-scroll {
             padding-left: 1rem;
             padding-right: 1rem;
+          }
+
+          /* Show mobile scroll indicator only on mobile */
+          .mobile-scroll-indicator {
+            display: flex !important;
           }
 
           .modal-main-content {
