@@ -103,13 +103,13 @@ export default function Home() {
   const programmingLanguages = [
     { name: "Python", icon: "🐍" },
     { name: "JavaScript", icon: "🟨" },
+    { name: "React", icon: "⚛️" },
     { name: "Java", icon: "☕" },
     { name: "C++", icon: "🔧" },
     { name: "HTML", icon: "🌐" },
     { name: "CSS", icon: "🎨" },
     { name: "C", icon: "⚙️" },
     { name: "SQL", icon: "💾" },
-    { name: "React", icon: "⚛️" },
   ];
 
   const securityTools = [
@@ -206,10 +206,10 @@ export default function Home() {
 
   // Social Links (placeholder - user will add later)
   const socialLinks = [
-    { name: "GitHub", icon: "💻", url: "#" },
-    { name: "LinkedIn", icon: "💼", url: "#" },
-    { name: "Twitter", icon: "🐦", url: "#" },
-    { name: "Email", icon: "📧", url: "#" },
+    { name: "GitHub", icon: "💻", url: "https://github.com/Suryao07" },
+    { name: "LinkedIn", icon: "💼", url: "https://www.linkedin.com/in/surya-pratap-singh-61a41130a" },
+    { name: "TryHackMe", icon: "🛡️", url: "https://tryhackme.com/p/suryao07" },
+    { name: "Email", icon: "📧", url: "mailto:surya7978252@gmail.com" },
   ];
 
   return (
@@ -255,9 +255,6 @@ export default function Home() {
             <Link to="/resume" className="cta-button-secondary" style={ctaButtonSecondary}>
               Download Resume
             </Link>
-            <a href="#contact" className="cta-button-secondary" style={ctaButtonSecondary}>
-              Contact Me
-            </a>
           </div>
         </div>
 
@@ -422,10 +419,6 @@ export default function Home() {
             <span style={quickLinkIcon}>📄</span>
             <span style={quickLinkText}>Download Resume</span>
           </Link>
-          <a href="mailto:surya7978252@gmail.com" className="quick-link-card" style={quickLinkCard}>
-            <span style={quickLinkIcon}>📩</span>
-            <span style={quickLinkText}>Contact Me</span>
-          </a>
         </div>
       </section>
 
@@ -463,6 +456,7 @@ const heroContainer = {
   paddingBottom: "clamp(40px, 6vw, 60px)",
   paddingLeft: "clamp(5%, 6vw, 80px)",
   minHeight: "auto",
+  overflowX: "hidden",
 };
 
 const textArea = {
@@ -471,6 +465,9 @@ const textArea = {
   display: "flex",
   flexDirection: "column",
   justifyContent: "center",
+  overflowX: "hidden",
+  overflowWrap: "break-word",
+  wordWrap: "break-word",
 };
 
 const imageArea = {
@@ -694,6 +691,10 @@ const skillName = {
   fontSize: "1.1rem",
   fontWeight: 600,
   color: "#e8f1ff",
+  wordWrap: "break-word",
+  overflowWrap: "break-word",
+  wordBreak: "break-word",
+  lineHeight: 1.3,
 };
 
 const progressBarContainer = {
@@ -744,17 +745,18 @@ const securitySkillBadge = {
   alignItems: "center",
   justifyContent: "center",
   gap: "12px",
-  padding: "20px 24px",
+  padding: "20px 14px",
   background: "rgba(79, 209, 255, 0.1)",
   border: "1px solid rgba(79, 209, 255, 0.3)",
   borderRadius: "12px",
   color: "#cbd5e1",
-  minWidth: "clamp(150px, 22vw, 200px)",
-  maxWidth: "clamp(150px, 22vw, 200px)",
-  width: "clamp(150px, 22vw, 200px)",
+  minWidth: "clamp(155px, 24vw, 220px)",
+  maxWidth: "clamp(155px, 24vw, 220px)",
+  width: "clamp(155px, 24vw, 220px)",
   flexShrink: 0,
   textAlign: "center",
   transition: "all 0.3s ease",
+  overflow: "hidden",
 };
 
 const toolBadge = {
@@ -1107,18 +1109,36 @@ const mobileStyles = `
       grid-template-columns: 1fr !important;
       text-align: left !important;
       gap: 2rem !important;
-      padding: clamp(60px, 12vw, 100px) clamp(5%, 6vw, 40px) clamp(30px, 5vw, 50px) clamp(5%, 6vw, 40px) !important;
+      padding: 30px 16px 20px 16px !important;
+      overflow-x: hidden !important;
     }
 
     .home-hero .text-area {
       text-align: left !important;
       align-items: flex-start !important;
+      word-wrap: break-word !important;
+      overflow-wrap: break-word !important;
+      overflow-x: hidden !important;
     }
 
-    .home-hero h1,
+    .home-hero h1 {
+      text-align: left !important;
+      width: 100% !important;
+      word-wrap: break-word !important;
+      overflow-wrap: break-word !important;
+      word-break: break-word !important;
+      font-size: clamp(1.8rem, 5vw, 2.5rem) !important;
+      margin: 0 !important;
+    }
+
     .home-hero p {
       text-align: left !important;
       width: 100% !important;
+      word-wrap: break-word !important;
+      overflow-wrap: break-word !important;
+      word-break: break-word !important;
+      font-size: clamp(0.9rem, 2.5vw, 1rem) !important;
+      line-height: 1.5 !important;
     }
 
     .home-image-area {
@@ -1137,9 +1157,11 @@ const mobileStyles = `
       -webkit-overflow-scrolling: touch !important;
       scrollbar-width: none !important;
       -ms-overflow-style: none !important;
-      gap: 16px !important;
-      padding-left: clamp(5%, 6vw, 40px) !important;
-      padding-right: clamp(5%, 6vw, 40px) !important;
+      gap: 12px !important;
+      padding-left: 16px !important;
+      padding-right: 16px !important;
+      margin-left: -16px !important;
+      margin-right: -16px !important;
     }
 
     .certifications-grid::-webkit-scrollbar,
@@ -1147,7 +1169,7 @@ const mobileStyles = `
       display: none !important;
     }
 
-    .cert-badge,
+    .cert-card,
     .quick-link-card {
       width: calc(85vw - 32px) !important;
       min-width: calc(85vw - 32px) !important;
@@ -1179,6 +1201,66 @@ const mobileStyles = `
 
     .social-links-container {
       justify-content: flex-start;
+    }
+
+    /* Security Skills on Mobile */
+    .skills-grid {
+      gap: 12px !important;
+    }
+
+    /* Override section padding for very small screens */
+    section {
+      padding-left: 16px !important;
+      padding-right: 16px !important;
+      overflow-x: hidden !important;
+    }
+  }
+
+  @media (max-width: 480px) {
+    html, body {
+      overflow-x: hidden !important;
+      width: 100% !important;
+      max-width: 100% !important;
+    }
+
+    section {
+      padding-left: 16px !important;
+      padding-right: 16px !important;
+      overflow-x: hidden !important;
+      width: 100% !important;
+      max-width: 100% !important;
+    }
+
+    .home-hero {
+      padding: 30px 16px 20px 16px !important;
+      overflow-x: hidden !important;
+      width: 100% !important;
+    }
+
+    .home-hero h1 {
+      font-size: 1.8rem !important;
+      margin: 0 !important;
+      line-height: 1.2 !important;
+    }
+
+    .home-hero p {
+      font-size: 0.9rem !important;
+      line-height: 1.5 !important;
+      margin: 0 !important;
+    }
+
+    h2 {
+      font-size: 1.5rem !important;
+    }
+
+    h3 {
+      font-size: 1.2rem !important;
+    }
+
+    /* Ensure all text containers don't overflow */
+    * {
+      box-sizing: border-box;
+      max-width: 100% !important;
     }
   }
 
@@ -1218,14 +1300,14 @@ const mobileStyles = `
       padding-right: 0 !important;
     }
 
-    .cert-badge,
+    .cert-card,
     .quick-link-card {
       width: auto !important;
       min-width: auto !important;
       max-width: none !important;
     }
 
-    .cert-badge:hover {
+    .cert-card:hover {
       transform: translateY(-5px);
       border-color: rgba(79, 209, 255, 0.5);
       box-shadow: 0 8px 25px rgba(79, 209, 255, 0.2);
