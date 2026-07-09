@@ -85,9 +85,9 @@ export default function Home() {
 
   // Quick Stats Data
   const stats = [
-    { label: "TryHackMe Rooms  ", value: "50+", icon: "🛡️" },
+    { label: "TryHackMe Rooms  ", value: "89", icon: "🛡️" },
     { label: "CTF Challenges Solved ", value: "4+", icon: "🚩" },
-    { label: "Certifications", value: "4+", icon: "📜" },
+    { label: "Certifications", value: "5+", icon: "📜" },
     { label: "Security Projects", value: "3+", icon: "🗂️" },
   ];
 
@@ -103,7 +103,6 @@ export default function Home() {
   const programmingLanguages = [
     { name: "Python", icon: "🐍" },
     { name: "JavaScript", icon: "🟨" },
-    { name: "React", icon: "⚛️" },
     { name: "Java", icon: "☕" },
     { name: "C++", icon: "🔧" },
     { name: "HTML", icon: "🌐" },
@@ -162,6 +161,12 @@ export default function Home() {
 
   // Certifications Data
   const certifications = [
+    {
+      title: "Cybersecurity Intern – Web Exploit Hunting & Bug Bounty",
+      subtitle: "EdSkill Academy – 10 Week Internship",
+      icon: "🔐",
+      shortName: "Internship"
+    },
     { 
       title: "Certified Ethical Hacker", 
       subtitle: "Training – Internshala & Scholverse Educare",
@@ -224,7 +229,7 @@ export default function Home() {
           </p>
 
           <p style={{ marginTop: "clamp(1.2rem, 4vw, 2rem)" }}>
-            Passionate cybersecurity student focused on penetration testing and real-world security practices. Experienced in identifying vulnerabilities through hands-on labs and CTF challenges using tools like Burp Suite and Nmap. Actively building practical skills in web security, network reconnaissance, and automation, while continuously learning modern security techniques.
+            Passionate cybersecurity student focused on penetration testing and real-world security practices. Ranked in the top 5% on TryHackMe with 89 completed rooms, 13 badges, and a 137-day learning streak. Experienced in web application security testing, vulnerability assessment, reconnaissance, and bug bounty methodology using tools like Burp Suite and Nmap.
           </p>
 
           <p style={{ marginTop: "clamp(1rem, 3vw, 1.5rem)" }}>
@@ -1328,13 +1333,13 @@ const mobileStyles = `
 
     .cta-button-primary:hover {
       background: transparent;
-      color: #4fd1ff;
+      color: "#4fd1ff";
       box-shadow: 0 0 25px rgba(79, 209, 255, 0.5);
     }
 
     .cta-button-secondary:hover {
-      background: #4fd1ff;
-      color: #02040a;
+      background: "#4fd1ff";
+      color: "#02040a";
       box-shadow: 0 0 25px rgba(79, 209, 255, 0.5);
     }
   }
