@@ -214,7 +214,7 @@ export default function Home() {
     { name: "GitHub", icon: "💻", url: "https://github.com/Suryao07" },
     { name: "LinkedIn", icon: "💼", url: "https://www.linkedin.com/in/surya-pratap-singh-61a41130a" },
     { name: "TryHackMe", icon: "🛡️", url: "https://tryhackme.com/p/suryao07" },
-    { name: "Email", icon: "📧", url: "mailto:surya7978252@gmail.com" },
+    { name: "Email", icon: "📧", url: "mailto:suryapratap.contact@gmail.com" },
   ];
 
   return (
