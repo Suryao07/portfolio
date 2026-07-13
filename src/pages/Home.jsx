@@ -85,7 +85,7 @@ export default function Home() {
 
   // Quick Stats Data
   const stats = [
-    { label: "TryHackMe Rooms  ", value: "89", icon: "🛡️" },
+    { label: "TryHackMe Rooms  ", value: "90", icon: "🛡️" },
     { label: "CTF Challenges Solved ", value: "4+", icon: "🚩" },
     { label: "Certifications", value: "5+", icon: "📜" },
     { label: "Security Projects", value: "3+", icon: "🗂️" },
