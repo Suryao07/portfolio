@@ -85,7 +85,7 @@ export default function Home() {
 
   // Quick Stats Data
   const stats = [
-    { label: "TryHackMe Rooms  ", value: "90", icon: "🛡️" },
+    { label: "TryHackMe Rooms  ", value: "104+", icon: "🛡️" },
     { label: "CTF Challenges Solved ", value: "4+", icon: "🚩" },
     { label: "Certifications", value: "5+", icon: "📜" },
     { label: "Security Projects", value: "3+", icon: "🗂️" },
@@ -229,7 +229,7 @@ export default function Home() {
           </p>
 
           <p style={{ marginTop: "clamp(1.2rem, 4vw, 2rem)" }}>
-            Passionate cybersecurity student focused on penetration testing and real-world security practices. Ranked in the top 5% on TryHackMe with 89 completed rooms, 13 badges, and a 137-day learning streak. Experienced in web application security testing, vulnerability assessment, reconnaissance, and bug bounty methodology using tools like Burp Suite and Nmap.
+            Passionate cybersecurity student focused on penetration testing and real-world security practices. Ranked in the top 4% on TryHackMe with 104+ completed rooms, 14+ badges, and a 137-day learning streak. Experienced in web application security testing, vulnerability assessment, reconnaissance, and bug bounty methodology using tools like Burp Suite and Nmap.
           </p>
 
           <p style={{ marginTop: "clamp(1rem, 3vw, 1.5rem)" }}>
