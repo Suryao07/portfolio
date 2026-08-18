@@ -241,7 +241,7 @@ export default function Home() {
           </p>
 
           <p style={{ marginTop: "clamp(1.2rem, 4vw, 2rem)" }}>
-            Passionate cybersecurity student focused on penetration testing and real-world security practices. Ranked in the top 4% on TryHackMe with 104+ completed rooms, 14+ badges, and a 137-day learning streak. Experienced in web application security testing, vulnerability assessment, reconnaissance, and bug bounty methodology using tools like Burp Suite and Nmap.
+            I'm a cybersecurity student passionate about penetration testing and real-world security. Ranked in the top 4% on TryHackMe with 104+ completed rooms and 14+ badges, I've built hands-on experience in web application security, reconnaissance, vulnerability assessment, and bug bounty methodology. I enjoy learning by breaking things, understanding how they work, and building practical security skills with tools like Burp Suite and Nmap.
           </p>
 
           <p style={{ marginTop: "clamp(1rem, 3vw, 1.5rem)" }}>
