@@ -161,33 +161,45 @@ export default function Home() {
 
   // Certifications Data
   const certifications = [
-    {
-      title: "Cybersecurity Intern – Web Exploit Hunting & Bug Bounty",
-      subtitle: "EdSkill Academy – 10 Week Internship",
-      icon: "🔐",
-      shortName: "Internship"
-    },
     { 
-      title: "Certified Ethical Hacker", 
-      subtitle: "Training – Internshala & Scholverse Educare",
+      title: "Certified Ethical Hacker (CEH v13)", 
+      subtitle: "EC-Council",
       icon: "🛡️",
       shortName: "CEH"
     },
     { 
-      title: "TryHackMe Pre Security Certificate",
-      subtitle: "Security Fundamentals",
+      title: "ISC2 Certified in Cybersecurity (CC)", 
+      subtitle: "ISC2",
+      icon: "🔏",
+      shortName: "ISC2 CC"
+    },
+    {
+      title: "Web Exploit Hunting & Bug Bounty Internship Certificate",
+      subtitle: "EdSkill Academy",
+      icon: "🔐",
+      shortName: "Internship"
+    },
+    { 
+      title: "Pre-Security Certificate",
+      subtitle: "TryHackMe",
       icon: "🧠",
       shortName: "TryHackMe"
     },
+    {
+      title: "Ethical Hacking with AI",
+      subtitle: "Certificate of Training, Internshala",
+      icon: "🤖",
+      shortName: "AI Ethical Hacking"
+    },
     { 
-      title: "Google Foundations of Cybersecurity",
-      subtitle: "Coursera Professional Certificate",
+      title: "Foundations of Cybersecurity",
+      subtitle: "Google via Coursera",
       icon: "🌐",
       shortName: "Google"
     },
     { 
       title: "Advanced Diploma in Python Programming",
-      subtitle: "Programming & Automation",
+      subtitle: "CSC",
       icon: "🐍",
       shortName: "Python"
     },
